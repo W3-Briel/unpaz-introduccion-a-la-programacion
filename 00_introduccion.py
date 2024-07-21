@@ -5,3 +5,11 @@
 ## 1) variables: al crear una variable, estamos asignando implicitamente un espacio en memoria, en donde guardaremos datos.
 # las variables son cosas que simpre vamos a estar utilizando, asi que hay que darle bola en como se crean(declara) y se le otorga datos (cuando una variable ya tiene datos, se le dice que esta )
 #nombre = "datos"
+
+## 2) tipos de datos
+
+## 3) estructuras de control
+
+## 4) estructuras iterativas
+
+## 5) funciones y metodos
