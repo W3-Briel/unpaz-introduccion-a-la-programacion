@@ -13,3 +13,5 @@
 ## 4) estructuras iterativas
 
 ## 5) funciones y metodos
+
+## 6) input output
