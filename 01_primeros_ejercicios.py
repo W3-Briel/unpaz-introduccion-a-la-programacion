@@ -25,3 +25,9 @@ print(f"2(esto fue hecho con un fstring)lo que ingreso el usuario es: {entrada_u
 
 ##Escribir un programa que pregunte al usuario una cantidad a invertir, el interés anual y el
 ##número de años, y muestre por pantalla el capital obtenido en la inversión.
+
+inversion = int(input("cantidad a invertir: "))
+interes = int(input("interes anual: "))
+años = int(input("cantidad de años: "))
+
+print(f"la cantidad que vas a ganar al terminar el plazo, es: {(inversion * (interes/100)) * años }")
