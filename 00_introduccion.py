@@ -10,8 +10,10 @@
 # Strings, booleanos, listas, diccionarios, colecciones, floats, enteros
 ## 2.2) operadores y operaciones con cada tipo de datos
 
+
 ## 3) estructuras de control
 # if else, elif, match case, operadores ternarios
+## 3.1) condicionales
 
 ## 4) estructuras iterativas
 # for, while
