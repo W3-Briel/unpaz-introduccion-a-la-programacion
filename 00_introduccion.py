@@ -24,3 +24,5 @@ strings,booleanos,listas,diccionarios,conjunto,flotante,entero = "hola",True, []
 # def, split, pop, push ...
 
 ## 6) input output
+#input() # entrada de datos
+#return  # salida de datos

@@ -31,3 +31,5 @@ interes = int(input("interes anual: "))
 años = int(input("cantidad de años: "))
 
 print(f"la cantidad que vas a ganar al terminar el plazo, es: {(inversion * (interes/100)) * años }")
+
+###
