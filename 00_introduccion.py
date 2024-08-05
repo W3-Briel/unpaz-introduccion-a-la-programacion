@@ -20,8 +20,18 @@ strings,booleanos,listas,diccionarios,conjunto,flotante,entero = "hola",True, []
 ## 4) estructuras iterativas
 # for, while
 
+for i in []: pass
+
+while True:
+    break
+
 ## 5) funciones y metodos
 # def, split, pop, push ...
+
+def funcion():
+    pass
+
+"a.b.c.d".split(".")
 
 ## 6) input output
 #input() # entrada de datos
