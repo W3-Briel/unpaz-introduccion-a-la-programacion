@@ -19,17 +19,43 @@
 ## pero no todas las maneras de resolver un problema es la mejor.
 
 
-entrada_usuario = input("ingresar un valor: ")
-print("1(esto es concatenacion de strings)lo que ingreso el usuario es: "+ entrada_usuario)
-print(f"2(esto fue hecho con un fstring)lo que ingreso el usuario es: {entrada_usuario}")
+# entrada_usuario = input("ingresar un valor: ")
+# print("1(esto es concatenacion de strings)lo que ingreso el usuario es: "+ entrada_usuario)
+# print(f"2(esto fue hecho con un fstring)lo que ingreso el usuario es: {entrada_usuario}")
 
-##Escribir un programa que pregunte al usuario una cantidad a invertir, el interés anual y el
-##número de años, y muestre por pantalla el capital obtenido en la inversión.
+# ##Escribir un programa que pregunte al usuario una cantidad a invertir, el interés anual y el
+# ##número de años, y muestre por pantalla el capital obtenido en la inversión.
 
-inversion = int(input("cantidad a invertir: "))
-interes = int(input("interes anual: "))
-años = int(input("cantidad de años: "))
+# inversion = int(input("cantidad a invertir: "))
+# interes = int(input("interes anual: "))
+# años = int(input("cantidad de años: "))
 
-print(f"la cantidad que vas a ganar al terminar el plazo, es: {(inversion * (interes/100)) * años }")
+# print(f"la cantidad que vas a ganar al terminar el plazo, es: {(inversion * (interes/100)) * años }")
 
 ###
+#
+# Crea una función que reciba dos cadenas como parámetro (str1, str2)
+# e imprima otras dos cadenas como salida (out1, out2).
+# - out1 contendrá todos los caracteres presentes en la str1 pero NO
+#   estén presentes en str2.
+# - out2 contendrá todos los caracteres presentes en la str2 pero NO
+#   estén presentes en str1.
+
+def ejercicio1(str1,str2):
+    out1 = ""
+    out2 = ""
+
+    for caracter1 in str1:
+        if caracter1 not in str2:
+            out1 += caracter1
+        continue
+    
+    for caracter2 in str2:
+        if caracter2 not in str1:
+            out2 += caracter2
+        continue   
+
+    return (out1,out2)
+
+
+print(ejercicio1("hola","chau")) ## se puede optimizar
