@@ -41,21 +41,50 @@
 # - out2 contendrá todos los caracteres presentes en la str2 pero NO
 #   estén presentes en str1.
 
-def ejercicio1(str1,str2):
-    out1 = ""
-    out2 = ""
+# def ejercicio1(str1,str2):
+#     out1 = ""
+#     out2 = ""
 
-    for caracter1 in str1:
-        if caracter1 not in str2:
-            out1 += caracter1
-        continue
+#     for caracter1 in str1:
+#         if caracter1 not in str2:
+#             out1 += caracter1
+#         continue
     
-    for caracter2 in str2:
-        if caracter2 not in str1:
-            out2 += caracter2
-        continue   
+#     for caracter2 in str2:
+#         if caracter2 not in str1:
+#             out2 += caracter2
+#         continue   
 
-    return (out1,out2)
+#     return (out1,out2)
 
 
-print(ejercicio1("hola","chau")) ## se puede optimizar
+# print(ejercicio1("hola","chau")) ## se puede optimizar
+
+# /*
+#  * Crea un función que reciba un texto y retorne la vocal que
+#  * más veces se repita.
+#  * - Ten cuidado con algunos casos especiales.
+#  * - Si no hay vocales podrá devolver vacío.
+#  */
+
+def vocal_mas_repetida(palabra):
+    a,e,i,o,u = 0,0,0,0,0
+
+    for letra in palabra:
+        if letra.lower() == "a": a+=1
+        if letra.lower() == "e": e+=1
+        if letra.lower() == "i": i+=1
+        if letra.lower() == "o": o+=1
+        if letra.lower() == "u": u+=1
+    
+    repeticiones = [a,e,i,o,u]
+    
+    indice = -1
+    
+    for i,valor in enumerate(repeticiones):
+        if valor > indice:
+            indice = i
+
+    return repeticiones[i]
+
+print(vocal_mas_repetida("abaabbb"))
