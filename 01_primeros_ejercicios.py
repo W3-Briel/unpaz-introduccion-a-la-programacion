@@ -68,23 +68,22 @@
 #  */
 
 def vocal_mas_repetida(palabra):
-    a,e,i,o,u = 0,0,0,0,0
-
-    for letra in palabra:
-        if letra.lower() == "a": a+=1
-        if letra.lower() == "e": e+=1
-        if letra.lower() == "i": i+=1
-        if letra.lower() == "o": o+=1
-        if letra.lower() == "u": u+=1
+    p = palabra.lower()
+    cantidades = [p.count("a"),
+                 p.count("e"),
+                 p.count("i"),
+                 p.count("o"),
+                 p.count("u")]
     
-    repeticiones = [a,e,i,o,u]
-    
-    indice = -1
-    
-    for i,valor in enumerate(repeticiones):
-        if valor > indice:
-            indice = i
+    maximo = max(cantidades)
+    for ind,val in enumerate(cantidades):
+        
+        if val == maximo:
+            match ind:
+                case 0: return "a"
+                case 1: return "e"
+                case 2: return "i"
+                case 3: return "o"
+                case 4: return "u"
 
-    return repeticiones[i]
-
-print(vocal_mas_repetida("abaabbb"))
+print(vocal_mas_repetida("abaabbooooooob"))
