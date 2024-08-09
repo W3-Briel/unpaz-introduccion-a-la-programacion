@@ -67,23 +67,30 @@
 #  * - Si no hay vocales podrá devolver vacío.
 #  */
 
-def vocal_mas_repetida(palabra):
-    p = palabra.lower()
-    cantidades = [p.count("a"),
-                 p.count("e"),
-                 p.count("i"),
-                 p.count("o"),
-                 p.count("u")]
+# def vocal_mas_repetida(palabra):
+#     p = palabra.lower()
+#     cantidades = [p.count("a"),
+#                  p.count("e"),
+#                  p.count("i"),
+#                  p.count("o"),
+#                  p.count("u")]
     
-    maximo = max(cantidades)
-    for ind,val in enumerate(cantidades):
+#     maximo = max(cantidades)
+#     for ind,val in enumerate(cantidades):
         
-        if val == maximo:
-            match ind:
-                case 0: return "a"
-                case 1: return "e"
-                case 2: return "i"
-                case 3: return "o"
-                case 4: return "u"
+#         if val == maximo:
+#             match ind:
+#                 case 0: return "a"
+#                 case 1: return "e"
+#                 case 2: return "i"
+#                 case 3: return "o"
+#                 case 4: return "u"
 
-print(vocal_mas_repetida("abaabbooooooob"))
+# /*
+#  * Escribe una función que reciba dos palabras (String) y retorne
+#  * verdadero o falso (Bool) según sean o no anagramas.
+#  * - Un Anagrama consiste en formar una palabra reordenando TODAS
+#  *   las letras de otra palabra inicial.
+#  * - NO hace falta comprobar que ambas palabras existan.
+#  * - Dos palabras exactamente iguales no son anagrama.
+#  */
