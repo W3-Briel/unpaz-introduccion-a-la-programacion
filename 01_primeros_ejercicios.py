@@ -94,3 +94,6 @@
 #  * - NO hace falta comprobar que ambas palabras existan.
 #  * - Dos palabras exactamente iguales no son anagrama.
 #  */
+
+def anagrama(palabra1: str,palabra2: str) -> bool:
+    
