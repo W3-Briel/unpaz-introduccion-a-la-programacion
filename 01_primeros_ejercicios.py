@@ -95,5 +95,29 @@
 #  * - Dos palabras exactamente iguales no son anagrama.
 #  */
 
+def aux_contarLetras(palabra: str) -> dict:
+    letras = dict()
+
+    for i in palabra:
+            keys = letras.keys()
+
+            if i in keys:
+                letras[i] += 1
+            else:
+                letras.update({i:1})
+    return letras
+ 
 def anagrama(palabra1: str,palabra2: str) -> bool:
+    letras1 = aux_contarLetras(palabra1)
+    letras2 = aux_contarLetras(palabra2)
+
+    if letras1.keys() != letras2.keys(): return False
+
+    for i in letras1:
+        if letras1[i] == letras2[i]:
+            continue
+        else: return False
     
+    return True
+
+print(anagrama("arroz","zorra"))
