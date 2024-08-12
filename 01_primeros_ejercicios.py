@@ -95,29 +95,40 @@
 #  * - Dos palabras exactamente iguales no son anagrama.
 #  */
 
-def aux_contarLetras(palabra: str) -> dict:
-    letras = dict()
+# def aux_contarLetras(palabra: str) -> dict:
+#     letras = dict()
 
-    for i in palabra:
-            keys = letras.keys()
+#     for i in palabra:
+#             keys = letras.keys()
 
-            if i in keys:
-                letras[i] += 1
-            else:
-                letras.update({i:1})
-    return letras
+#             if i in keys:
+#                 letras[i] += 1
+#             else:
+#                 letras.update({i:1})
+#     return letras
  
-def anagrama(palabra1: str,palabra2: str) -> bool:
-    letras1 = aux_contarLetras(palabra1)
-    letras2 = aux_contarLetras(palabra2)
+# def anagrama(palabra1: str,palabra2: str) -> bool:
+#     letras1 = aux_contarLetras(palabra1)
+#     letras2 = aux_contarLetras(palabra2)
 
-    if letras1.keys() != letras2.keys(): return False
+#     if letras1.keys() != letras2.keys(): return False
 
-    for i in letras1:
-        if letras1[i] == letras2[i]:
-            continue
-        else: return False
+#     for i in letras1:
+#         if letras1[i] == letras2[i]:
+#             continue
+#         else: return False
     
-    return True
+#     return True
 
-print(anagrama("arroz","zorra"))
+# print(anagrama("arroz","zorra"))
+
+# /*
+#  * Crea una función que reciba dos cadenas como parámetro (str1, str2)
+#  * e imprima otras dos cadenas como salida (out1, out2).
+#  * - out1 contendrá todos los caracteres presentes en la str1 pero NO
+#  *   estén presentes en str2.
+#  * - out2 contendrá todos los caracteres presentes en la str2 pero NO
+#  *   estén presentes en str1.
+#  */
+
+
