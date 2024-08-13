@@ -131,4 +131,19 @@
 #  *   estén presentes en str1.
 #  */
 
+def diferentes_letras(str1: str, str2: str) -> tuple:
+    out1 = []
+    out2 = []
 
+    for i in str1:
+        if i not in set(str2):
+            out1.append(i)
+    
+    for x in str2:
+        if i not in set(str1):
+            out2.append(x)
+    
+    return (out1,out2)
+
+
+print(diferentes_letras("abc","asd"))
