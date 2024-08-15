@@ -58,6 +58,30 @@
 #     return (out1,out2)
 
 
+#
+# Dada las siguientes notas almacenadas en un arreglo:
+# [20, 15, 12, 11, 8, 4, 1]
+# Elimine la nota más baja programáticamente sin usar la función (min) y escriba en
+# pantalla. Luego programáticamente calcule el promedio de notas descontando la nota
+# eliminada. 
+
+# def numero_menor(lista: list) -> int:
+#     aux = lista[0]
+#     for n in lista:
+#         if n < aux: aux = n
+
+#     return aux
+
+# def eliminar_numero(lista: list, numero: int) -> list:
+#     clon = []
+#     for n in lista:
+#         if n != numero: clon+= [n]
+    
+#     return clon
+
+# test_value =  [20, 15, 12, 11, 8, 4, 1]
+# print(eliminar_numero(test_value,numero_menor(test_value)))
+
 # print(ejercicio1("hola","chau")) ## se puede optimizar
 
 # /*
